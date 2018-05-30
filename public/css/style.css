@@ -1,0 +1,22 @@
+body{
+	background-color:#fff;
+	padding-top: 45px;
+}
+
+.navbar{
+	background-color: #0c84e4;
+	font-weight: 700;
+	font-family: 'PT Sans Narrow',Arial,sans-serif;
+	text-transform: uppercase;
+	color:#FFF !important;
+}
+
+#footer{
+	margin-top: 30px;
+	padding: 10px;
+	color: #fff;
+	background: #0c84e4;
+}
+#footer p{
+	margin-bottom: 0px;
+}
