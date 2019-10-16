@@ -82,4 +82,16 @@ class CheckoutController extends Controller
         
    }
 
+   //function to export excel
+   public function actionDownloadReport(){
+       $fields = array ('number','user','product');
+       $criteria = new invoice();
+       $criteria = select = $fields;
+       $criteria ->condition = "number=''";
+       $criteria ->order ="product";
+       $users=users::model()->findAll($criteria);
+       
+       XlsExporter::downloadXls('report',$users,'List of users:',true,$fields,'users');
+   }
+
 }
